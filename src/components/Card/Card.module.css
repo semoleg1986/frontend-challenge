@@ -21,10 +21,15 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    opacity: 0; 
     color: #F24E1E;
     padding: 8px;
     font-size: 36px;
 }
+
+.cardContainer:hover .favoriteIcon {
+    opacity: 1;
+  }
 
 .favoriteIcon:hover {
     color: #F24E1E;
@@ -32,4 +37,5 @@
   
 .favorite {
     color: #FF3A00;
+    opacity: 1; 
 }

@@ -8,4 +8,5 @@ export interface ICat {
 
 export interface ICatResult {
   cats: ICat[];
+  pages?: number;
 }
