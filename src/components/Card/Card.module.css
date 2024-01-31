@@ -1,0 +1,35 @@
+.cardContainer {
+    position: relative;
+    width: 255px;
+    height: 255px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardContainer:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.catImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.favoriteIcon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #F24E1E;
+    padding: 8px;
+    font-size: 36px;
+}
+
+.favoriteIcon:hover {
+    color: #F24E1E;
+  }
+  
+.favorite {
+    color: #FF3A00;
+}

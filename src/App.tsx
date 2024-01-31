@@ -6,6 +6,8 @@ import FavsPage from './pages/FavsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { FAVS_PAGE, NOT_FOUND_PAGE } from './router';
 
+import './App.css';
+
 const App = () => {
   return (
     <Routes>

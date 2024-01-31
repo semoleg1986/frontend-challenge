@@ -1,0 +1,7 @@
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 255px);
+    grid-gap: 25px;
+    animation: fade-in 1s;
+  }
+  

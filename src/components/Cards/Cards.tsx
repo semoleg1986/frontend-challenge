@@ -1,20 +1,11 @@
-import { useGetCatsQuery } from '../../store/services/catsApi';
+import { ICatResult } from '../../interfaces/CatInterfaces';
 import Card from '../Card/Card';
+import styles from './Cards.module.css';
 
-const Cards = () => {
-  const { data, isLoading } = useGetCatsQuery();
-
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-
-  if (!data) {
-    return null;
-  }
-
+const Cards: React.FC<ICatResult> = ({ cats }) => {
   return (
-    <div>
-      {data.results.map((cat) => (
+    <div className={styles.cardsContainer}>
+      {cats.map((cat) => (
         <Card key={cat.id} cat={cat} />
       ))}
     </div>

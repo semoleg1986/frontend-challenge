@@ -7,5 +7,5 @@ export interface ICat {
 }
 
 export interface ICatResult {
-  results: ICat[];
+  cats: ICat[];
 }

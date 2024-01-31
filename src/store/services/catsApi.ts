@@ -16,7 +16,7 @@ export const catsApi = createApi({
   endpoints: (builder) => ({
     getCats: builder.query<ICatResult, void>({
       query: () => 'search?limit=10',
-      transformResponse: (response: ICat[]) => ({ results: response }) as ICatResult,
+      transformResponse: (response: ICat[]) => ({ cats: response }) as ICatResult,
     }),
   }),
 });
