@@ -1,0 +1,9 @@
+.active {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #1E88E5;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 64px;
+  }
+  
