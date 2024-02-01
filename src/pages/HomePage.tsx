@@ -17,7 +17,7 @@ function HomePage() {
       document.documentElement.scrollHeight - 50
     ) {
       if (!isFetching) {
-        setCurrentPage((prevPage) => prevPage + 2);
+        setCurrentPage((prevPage) => prevPage + 1);
       }
     }
   }, [isFetching]);
